@@ -1,0 +1,11 @@
+Now we have class vector and class point;
+
+1、overloading operator << : format like this "1 2", don't wrap!
+
+2、overloading operator + between Vector and Vector : c = a + b;
+
+3、overloading operator + between Point and Vector : means Vector displacement， c = a + b where c and a are both points
+
+please write class vector and class point in one file
+
+submit the Vector_Point.cpp

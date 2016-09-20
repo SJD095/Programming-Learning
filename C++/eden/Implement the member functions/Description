@@ -1,0 +1,17 @@
+Design each of the member functions of the class STUDENT, whose interface is described in student.h
+
+ 
+
+
+Hint:
+
+Pay attention to static
+
+// function displayGrades definition
+void Student::displayGrades() const {
+    cout << "Here are the grades for " << name << endl;
+    // output each grade
+    for ( int i = 0; i < numGrades; i++ )
+       cout << setw(5) << grades[i];
+    cout << endl << endl;
+}   // end function displayGrades

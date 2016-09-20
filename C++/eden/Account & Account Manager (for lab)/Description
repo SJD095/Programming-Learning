@@ -1,0 +1,116 @@
+Now we need to help XiaoMing finish the class Account and class AccountManager.
+
+First, Account is a bank account model.
+
+log_ mean the operation logs : every time you operate the account, log will be update.
+
+constructor: log_ add "Create an account ***"
+
+Function deposit( amount ) : when amount < 0, output "Error operation!" and log will be added by "Error operation!". Otherwise, deal with it and add "Deposit *** yuan" to the log.
+
+Function withdraw( amount ) : when amount < 0, output "You don't have enough money!" and log will be added by "Error operation!". when amount > balance_, output "Error operation!" and log will be added by "Error operation!". Otherwise, deal with it and add "Withdraw *** yuan" to the log;
+
+Second, AccountManger is a bank manager model.
+
+Account* accounts_[10] : when the number of accounts is more than 10, create 10 accounts, and ignore others.
+
+interest_rate_ : please set 0.05
+
+Function caculateInterest() : all the accounts' balance will add. When there is no account, please output "Not any account!".
+
+Function getAccount( position ) : if the position is invalid, please output "Error operation!" and return NULL;
+
+Because XiaoMing is not familiar with class,  You should submit 2 files :  Account.cpp,  AccountManager.cpp
+
+ 
+
+Do everything you want until you finish, because the classes are both belong to you.
+
+Try to understand the program by output and main.
+
+ 
+
+ 
+
+Samplt input
+
+15 
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+100
+50
+20
+30
+60
+190
+80
+
+ 
+
+Sample output:
+
+ 
+
+Not any account!
+     |
+     |f
+     |190
+     |Error operation!
+     |Error operation!
+     |TRUE
+     |Create an account a
+     |Deposit 5 yuan
+     |
+     |Create an account b
+     |Deposit 2 yuan
+     |
+     |Create an account c
+     |Deposit 1 yuan
+     |
+     |Create an account d
+     |Deposit 1 yuan
+     |
+     |Create an account e
+     |Deposit 3 yuan
+     |
+     |Create an account f
+     |Deposit 100 yuan
+     |Error operation!
+     |Error operation!
+     |Withdraw 200 yuan
+     |Deposit 4 yuan
+     |
+     |Create an account g
+     |Deposit 4 yuan
+     |
+     |Create an account h
+     |Deposit 0 yuan
+     |
+     |Create an account i
+     |Deposit 0 yuan
+     |
+     |Create an account j
+     |Deposit 0 yuan
+
+Hint:
+
+构造函数及函数重载，
+inline函数 ： 声明和定义必须写在一起。
+返回值为const引用的作用 ： 返回值无法被修改。
+函数定义后加const的作用 ： 类的成员无法被修改。
+静态成员函数。
+单参数的构造函数的explicit
+指针

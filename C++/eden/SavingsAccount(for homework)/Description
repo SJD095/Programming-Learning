@@ -1,0 +1,19 @@
+Create a SavingsAccount class. Use a static data member to store the annualInterestRate to store the
+annual interest rate for each of the savers. Each member of the class contains a private data member savingsBalance
+indicating the amount the saver currently has on deposit. Provide a member function calculateMonthlyInterest
+member function that calculates the monthly interest by multiplying the balance by
+annualInterestRate divided by 12; this interest should be added to savingsBalance. Provide a static
+member function modifyInterestRate that sets the static annualInterestRate to a new value. If the new value is invalid,
+
+set the annualInterestRate to 3 percent.
+
+ 
+
+Sample Output:
+
+Initial balances:
+Saver 1: $2000.00 Saver 2: $3000.00
+Balances after 1 month's interest applied at 0.03:
+Saver 1: $2005.00 Saver 2: $3007.50
+Balances after 1 month's interest applied at 0.04:
+Saver 1: $2011.68 Saver 2: $3017.53
