@@ -1,0 +1,7 @@
+Write a class "Car".
+
+It has :
+private: std::string manufacturer; double displacement;
+public: the get/set function for the member data.
+
+the main function is given for reference, you just have to finish Car.h and Car.cpp ...

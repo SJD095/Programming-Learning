@@ -1,0 +1,21 @@
+Implement the class "BankAccount", it's header file is given.
+
+Notice:
+1 function "void BankAccount::reset()" means changing balance to 0 and changing name to "NONAME"
+2 If name is set as "", make it "INVALID". If balance is set below 0, make it 0. Else if balance is set over 200000, make it 200000.
+
+the template for BankAccount.cpp is
+
+===============================================
+
+#include "BankAccount.h"
+
+void BankAccount::reset() {
+
+    // TODO : add your own codes here
+
+}
+
+// etc......
+
+===============================================

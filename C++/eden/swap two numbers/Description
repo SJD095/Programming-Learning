@@ -1,0 +1,27 @@
+实现函数swap(int &, int &)，交换两个整数的值。
+
+以下是主程序：
+
+#include <iostream>
+
+using std::cin;
+
+using std::cout;
+
+using std::endl;
+
+void swap(int &, int &);
+
+int main() {
+
+  int a, b;
+
+  cin >> a >> b;
+
+  swap(a, b);
+
+  cout << a << " " << b << endl;
+
+  return 0;
+
+}

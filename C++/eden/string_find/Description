@@ -1,0 +1,44 @@
+英文题面
+
+Description
+Xiao Ming wrote an essay, but he is so fool that he wrote the word ‘happu’ instead of ‘happy’. Please write a program to help him replace into the correct word.
+
+Input
+Input consists of two lines.
+The first line is a string(for example, ”I am the student”).
+The second line contains two strings,  A and B.  A is to be replaced and  B is to replace. That is, B is used to replace all of  A in the sentence.
+
+Output
+The sentence after replacing.
+
+Sample Input
+i am happu.
+happu happy
+
+Sample Output
+i am happy.
+
+ 
+
+中文题面：
+
+描述
+
+小明写了一篇文章，但是他挺笨的，文章里面把单词“happy”写成了“happu”。请你写一个程序来帮助他把错误的单词改过来。
+
+ 
+
+输入
+
+输入有两行。
+
+第一行是一个字符串。例如”I am the student”。
+
+第二行有两个字符串，A和B。A是第一行中的字符串，B是拿来替换A的字符串。你需要把第一行字符串中出现的A全部替换成B。
+
+ 
+
+输出
+
+替换之后的字符串。
+

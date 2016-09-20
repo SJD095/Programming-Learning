@@ -1,0 +1,13 @@
+Implement the class Date. The header file is given.
+
+void Date::reset() means setting date to 2012-12-05.
+
+void Date::fromStr() which is used to produce a date by a sting like "2008-08-18" and void Date::toStr() has the opposite effect.
+
+Suppose all the messages and arguments are in legal..
+
+ 
+
+中文：依照给出的头文件实现Date类，reset函数的作用是将日期变为2012-12-05，fromStr函数是从形如"2008-08-18"的std::string对象导入日期，toStr则相反。
+
+すみません。。。初始日期应该是12-05。。。。打错了

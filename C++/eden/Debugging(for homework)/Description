@@ -1,0 +1,223 @@
+The program in this section does not run properly. Fix all the compilation errors so that
+the program will compile successfully. Once the program compiles, compare the output with the sample output,
+and eliminate any logic errors that may exist. The sample output demonstrates what the program’s output should
+be once the program’s code has been corrected.
+
+Note: The value of a card, 1 stands for Ace, 11 for Jack, 12 for Queen, 13 for King and others for themselves.
+
+The suit of a card, 1 stands for club, 2 for diamond, 3 for heart, 4 for spade.
+
+If the value exceeds 13 or the suit exceeds 4, the card is not valid.
+
+ 
+
+Sample Output
+
+
+This is the: Ace of spades
+This is the: 4 of hearts
+This card is not valid
+This is the: 4 of hearts
+This is the: Ace of hearts
+This is the: 5 of hearts
+This is the: Queen of clubs
+This is the: 5 of hearts
+The destructor has been invoked
+The destructor has been invoked
+The destructor has been invoked
+
+ 
+
+Broken Code
+
+ 
+
+code of Card.h:
+
+// Debugging: Card.h
+
+#ifndef CARD_H
+#define CARD_H
+
+// class card definition
+class Card {
+
+public
+   void Card();
+   void Card( int, int );
+   void ~Card();
+
+   void setSuit( int );
+   int getSuit() const;
+
+   void setValue( int );
+   int getValue() const;
+
+   void print() const;
+private
+   int suit = 4;
+   int value = 1;
+   bool validCard() const;
+} // end class Card
+
+#endif // CARD_H
+
+ 
+
+code of Card.cpp:
+
+// Debugging: Card.cpp
+
+#include <iostream>
+using namespace std;
+
+// default constructor
+void Card::Card() 
+{
+   suit = 4; 
+   value = 1;
+
+} // end class Card constructor
+
+// constructor
+Card::Card( int s, int v ) 
+{
+   suit = s; value = v;
+
+} // end class Card constructor
+
+// destructor
+Card::~Card() 
+{
+   cout << "The destructor has been invoked\n";
+
+} // end class Card destructor
+
+// set suit
+void Card::setSuit( int s ) 
+{
+   suit = s;
+
+} // end function setSuit
+
+// set value
+void Card::setValue( int v ) 
+{
+   value = v;
+
+} // end function setValue
+
+// function print definition
+void print()
+{
+   // is card valid
+   if ( !validCard() ) {
+      cout << "This card is not valid\n";
+      return;
+
+   } // end if
+
+   cout << "This is the: ";
+
+   // determine face of card
+   switch ( value ) {
+      case 1:
+         cout << "Ace ";
+         break;
+
+      case 11:
+         cout << "Jack ";
+         break;
+
+      case 12:
+         cout << "Queen ";
+         break;
+
+      case 13:
+         cout << "King ";
+         break;
+
+      default:
+         cout << value << " ";
+
+   } // end switch
+
+   // determine suit
+   switch ( suit ) {
+      case 1:
+         cout << "of clubs\n";
+         break;
+
+      case 2:
+         cout << "of diamonds\n";
+         break;
+
+      case 3:
+         cout << "of hearts\n";
+         break;
+
+      case 4:
+         cout << "of spades\n";
+         break;
+
+      default:
+         cout << "\ninvalid suit\n";
+
+   } // end switch
+
+} // end function print
+
+// return suit
+int Card::getSuit() 
+{
+   return suit;
+
+} // end function getSuit
+
+// return value
+int Card::getValue() 
+{
+   return value;
+
+} // end function getValue
+
+// function validCard definition
+bool validCard()
+{
+   return value >= 1 && value <= 13 && suit >= 1 && suit <= 4;
+
+} // end function validCard
+
+ 
+
+code of CardTest.cpp:
+
+// Debugging: CardTest.cpp
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   Card c1;  
+   Card c2( 3, 4 );
+   Card c3( 1, 14 );
+
+   Card *p1 = &c2;
+
+   c1.print();
+   c2.print();
+   c3.print();
+   p1->print();
+   cout << endl;
+
+   c1.setSuit( p1->getSuit() );
+   c3.value = 12;
+   p1->value = 5;
+   
+   c1.print();
+   c2.print();
+   c3.print();
+   *p1.print();
+   cout << endl;
+} // end main
