@@ -1,0 +1,19 @@
+In this problem, you must first complete a simple stack class, which has some functions such as push, pop, top and so on.
+
+Please finish the stack.cpp file.
+
+ 
+
+In the meanwhile, as an improved task, you can think about how to do error checking and overflow prevention in this stack class.  
+
+After that you need to achieve match.h class that has only one member function isMatch, used to detect brackets match. 
+
+ 
+
+About bracket matching, we restrict attention to "{}", "()" and "[]".
+
+For example, the string {([])} is a match, because the brackets in the correct position and correspondence.
+
+However even though the string {[(])} has the same number of opening and closing brackets, the [] and () do not correspond, so this is not a match. 
+
+Please finish the function isMatch, and return your result: true or false.

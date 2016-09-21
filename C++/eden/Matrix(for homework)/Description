@@ -1,0 +1,11 @@
+XiaoMing is very lazy about calculating, especially when dealing with matrices.
+
+Now he's got a task of calculating the product of two matrices and the transposition of that product.
+
+ 
+
+XiaoMing is eager for your help now.
+
+Please create a class Matrix to help him solve this problem.
+
+The declaration of Matrix is like that in the support file matrix.h.

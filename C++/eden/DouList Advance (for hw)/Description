@@ -1,0 +1,19 @@
+You guys must have seen nested list (嵌套链表) such as [1, 2, 3, [4, 5, [6, 7]], 8, [9, 0]].
+
+So your task is to improve DouList with nested feature. You can directly copy the codes submitted before and make changes on it. But pay attention to something which had been changed in header file.
+
+ 
+
+NOTICE 1:
+
+front() / back() now returns a DouList
+for example : a = [1, 2, 3, [4, 5, [6, 7]], 8, [9, 0]]
+a.front() returns [1]
+a.back() returns [9, 0]
+
+NOTICE 2:
+
+make sure the codes in the first version of DouListTest.cpp will still work well as before, consider how to make codes compatible.
+(保持向下兼容)
+
+===============
