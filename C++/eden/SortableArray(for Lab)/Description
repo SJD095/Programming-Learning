@@ -1,0 +1,11 @@
+Jialiang is called "big god".And he creates a class named sortable array.But he has to go out with his girl friend so he has no time to implement the class.So you are invited to implement the class for him.The declaration of the class is given below.And the class is a template class(模板类).
+
+The functions of the class includes:
+
+(1)using pushBack to insert an element.If the current size is already equal to the maxsize, then you should print "Already full!".
+
+(2)using sort to sort the array in ascending order.
+
+(3)using printArray to print the array.(there should be a space between two elements)
+
+(4)In the constructor, use the variable s to initialize the maxSize.

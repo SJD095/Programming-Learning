@@ -1,0 +1,33 @@
+adapt the stack from the previous list you finish, use your previous answer of list.
+
+I hope u can use the list you have finish. Also, if you want, you can use the standard list or STL list.
+
+The Stack's declaration :
+
+template<class T>
+class Stack {
+ public:
+  Stack();
+  ~Stack();
+  void push();
+  void pop();
+  T& top();
+  bool empty();
+  size_t size();
+ private:
+  list<T> li;
+};
+
+or
+
+template<class T>
+class Stack : private list<T> {
+ public:
+  Stack();
+  ~Stack();
+  void push();
+  void pop();
+  T& top();
+  bool empty();
+  size_t size();
+};

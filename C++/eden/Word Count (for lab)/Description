@@ -1,0 +1,22 @@
+From midterm-exam
+
+TA is a weirdo people...When he finished reading a book, he always want to find out the different words in the book, and then he counts the words whose length is no less than a specific number. It's a time-consuming work for he to do, so he want you to write out a program then it can automatically accomplish the task. 
+
+For simplicity, there is no punctuations in the text of the book and these words are case sensitive. Note that there may be multiple whitespace between two words and the beginning and ending of the text may contain whitespace. Remember your task is to write a class which can count different words whose length is not less than a specific number(It will be initialized in constructor and can be changed). 
+
+ 
+
+Please read the following test framework and its output, implement the WordsCounter.
+
+ 
+
+Sample input:
+3
+abc 123  abc iie I hate  TA 
+
+
+Sample output:
+
+2
+7          
+4

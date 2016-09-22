@@ -1,0 +1,13 @@
+This is an easy question. Try to use adaptable functors and fucntion adapters in algorithm library instead of the for, while, do while statement.
+
+ 
+
+If arr1[] = {1,2,1,2,1,2}, arr2[] = {1,2,3,1,2,3}, 
+
+gr8 should be a vector with elements of 1, 2, 1, 2, 1, 2.
+
+m8 should be a vector with elements of 1, 2, 3, 1, 2, 3.
+
+sum should be a vector with elements of 2, 4, 4, 3, 3, 5.
+
+prod should be a vector with elements of 2.5, 5.0, 2.5, 5.0, 2.5, 5.0.

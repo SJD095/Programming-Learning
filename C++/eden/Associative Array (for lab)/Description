@@ -1,0 +1,29 @@
+We commonly use an array which using digital as a subscript:
+
+For example: arr [0] indicates the first reference to the array, arr [1] represents the second reference to the array.
+
+The use of an associative array (index values ​​rather than any non-negative integer scalar) is more convenient, such as associative arrays in addition to support for digital do subscript, and also supports strings as indexes.
+
+If there is no corresponding entry in the index is initialized when you are in reference to this, it defaults to 0 (you can refer to the sample test code to understand this sentence).
+
+Now your task is to achieve the Array class so as to satisfy the above requirements, in order to simplify the difficulty value of each item is associated with an array of type int.
+
+ 
+
+Sample Input
+
+sample test code:
+
+arr["one"] = 1;
+arr[1] = 2;
+
+cout << arr["one"] << endl;
+cout << arr[1] << endl;
+cout << arr["two"] << endl;
+ 
+
+Sample Output
+
+1
+2
+0

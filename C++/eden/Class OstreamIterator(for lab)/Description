@@ -1,0 +1,15 @@
+In this exercise, you are required to implement a class named OstreamIterator and a function which copies the elements of a vector to the class.
+
+The class OstreamIterator mainly acts as an Iterator of a ostream(here it is cout), but it is a bit different.Because here the cout will output a int number and a delimeter(分隔符)every time.The int number is from the vector which is copied to the class by the function CopyIterator.
+
+The header of the class and the prototype of the function are given below.And the sample input and output are as followed.
+
+Sample Input
+
+7
+
+1 2 3 4 56 78 12
+
+Sample Output
+
+1,2,3,4,56,78,12,

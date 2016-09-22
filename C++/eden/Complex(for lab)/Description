@@ -1,0 +1,25 @@
+Write a program that accomplishes each of the following:
+a) Create a user-defined class Complex that contains the private integer data members real and imaginary
+and declares stream insertion and stream extraction overloaded operator functions as friends of the
+class.
+b) Define the stream insertion and stream extraction operator functions. The stream extraction operator
+function should determine whether the data entered is valid, and, if not, it should set failbit to indicate
+improper input. The input should be of the form "a + bi", "a - bi", or just "a", "bi"(without quotes).
+
+Note that although b=1, b can't be omitted.
+c) The values can be negative or positive, and it is possible that one of the two values is not provided. If a
+value is not provided, the appropriate data member should be set to 0. The stream-insertion operator
+should not be able to display the complex number if an input error occurred. For negative imaginary
+values, a minus sign should be printed rather than a plus sign.
+
+Sample Input
+
+2 + 2i
+
+ 
+
+Sample Output
+
+Complex number entered was:
+
+2+2i
