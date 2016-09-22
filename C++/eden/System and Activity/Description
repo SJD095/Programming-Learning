@@ -1,0 +1,31 @@
+XiaoMing is so bored! He has installed a dual system and decide to play games on Windows and study on Linux.
+There are two abstract class System and Activity.
+Class Windows and class Linux are the derived classes of class System.
+Class Game and class Study are the derived classes of class Activity.
+ 
+Please implement the four derived classes according to function main.
+ 
+tip:
+1. class System has a pure virtual function info(). This function will renturn the information of its system in derived class.Windows system returns "Windows QAQ"，Linux system renturns "Linux T_T"
+2. class Activity has a data system_ which shows the system of activity and a data name which shows the active person
+3.class Activityhas a pure virtual function play(). This function will renturn a string of all information in derived class. Such as "TA is playing game on Windows QAQ" and "xiaoming is studying on Linux T_T"
+ 
+中文题面：
+小明闲着没事装了双系统，windows和linux，他很蛋疼地决定要在windows下玩游戏，在linux下敲代码。
+
+现在，有两个抽象类System和Activity，System的子类是Windows和Linux，Activity的子类是Game和Study。
+System有纯虚函数info()，子类的实现返回当前系统的信息。Windows返回"Windows QAQ"，Linux返回"Linux T_T"
+Activity的system_成员表示当前活动所在平台，name成员表示活动进行的人的名字
+Activity的纯虚函数play()在子类实现返回一个字符串表示某人正在进行的活动和平台。形如“TA is playing game on Windows QAQ”和 “xiaoming is studying on Linux T_T”
+ 
+Input
+
+a b
+ 
+Output
+
+
+a is studying on Linux T_T
+a is studying on Windows QAQ
+b is playing game on Windows QAQ
+b is playing game on Linux T_T

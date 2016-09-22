@@ -1,0 +1,38 @@
+Format input and output with C++
+
+Xiao Ming is a C++ programer who is not familiar with the <iostream> library.
+
+After days of learning, he wants to show his learning results.
+
+Please look at the chapter with stream manipulator and help him complete the project .
+
+ 
+
+readNumber()  
+
+//Read a float number.
+
+//Read one character a time (cin.get), with cin.peek determine whether meet '.' or '\n'. Remember to ignore '\n' (cin.ignore).
+
+ 
+
+ 
+
+printFormatted()  
+
+//Print two formatted numbers. In the form of streams of the hint written (cout.write).
+
+//The first output number is forced to be set to 12 digits, if not enough, please fill with '0'.(Example : 0.00123) Output the float number with the usual way and left-justified.
+
+//The second number should print as Scientific notation and retain two decimal places with rounding. Output the float number with right-justified.
+
+ 
+
+ 
+
+to look at the chapter with stream manipulator
+
+
+Hint:
+
+Students should use cin.get(), cin.peek(), cin.ignore(), setfill(), setw(), setprecision(), noshowpos correctly.

@@ -1,0 +1,18 @@
+Er Uncle Long likes playing R18 games (also called ERO-Game). In the game, he makes an appointment with a girl during a gaming day time.
+
+Different orders of the girls may cause various stories and endings. To avoid cheating, the designer use singleton to make sure that Uncle Long can only run a game logically in same time, or make datas synchronous. He always get the only copy of data even if he run more than one programs.
+
+That's cool, so please implement a singleton class(.h & .cpp).
+
+BASIC FRAMEWORK(the methods listed are necessary):
+
+class R18 {
+
+  static R18 *getInstance();  // get game instance
+
+  void date_a_girl(const int &name);  // date a girl (name is int)
+
+  std::string girls_dated() const;  // girls dated before ordered by time, formatting "A,B,C,D"
+};
+
+=========

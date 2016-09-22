@@ -1,0 +1,48 @@
+We know a point (x,y) has  x coordinate and y coordinate and a circle has a center and a radius.
+
+There is a base class Point, and a derived class Circle.
+
+Please implement all the classes according to the function main.
+
+ 
+
+tips:
+
+Class Point:
+
+a)function print(): a point(2,3) will print "This Point is [2, 3]\n"
+
+ 
+
+Class Circle:
+
+a) #define PI 3.14159
+
+b) radius >= 0
+
+c)function area(): calculate the area of a circle
+
+d)function print(): a circle has a center(2,3) and radius 6 will print "The center of Circle is [2, 3]\n" and "The radius of Circle is 6\n"
+
+ 
+
+Intput：
+
+3 4
+
+4 6 2
+
+ 
+
+Output：
+
+
+3
+4
+This Point is [3, 4]
+4
+6
+2
+12.5664
+The center of Circle is [4, 6]
+The radius of Circle is 2
