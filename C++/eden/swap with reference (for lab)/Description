@@ -1,0 +1,12 @@
+Reference is a big feature in c++, implement the swap function using reference
+
+The declaration is like this:
+
+void swap(int &, int &);
+
+ 
+
+Notice
+your just need to write the code to implement the function declared in main.cpp
+
+don't need to worried about input and output

@@ -1,0 +1,35 @@
+With a class "Student" declared as below:
+
+ class Student {
+
+public:
+  int id;
+  char name[50]; // Data field
+  int age; // Data field
+  Student();
+  Student(int, const char*, int);
+};
+ 
+You are required to implement the class functions and also two other functions used to process Student objects, which can get output as specified later.
+ 
+void set(Student* , int, const char*, int);
+void print(Student);
+ 
+You don't need to submit the main function.
+
+With a main function as below:
+
+ int main(){
+
+  Student std1, std2(123, "John Smith", 18), std3(124);
+  set(std1, 100, "Bill Gates", 61);
+  print(std1);
+  print(std2);
+  print(std3);
+  return 0;
+}
+the following output should be printed with the implementations added by you:
+
+Bill Gates (100) is 61 years old.
+John Smith (123) is 18 years old.
+No Name (124) is 0 years old.

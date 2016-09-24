@@ -1,0 +1,25 @@
+Description
+
+Known the coordinates of  two points are (x1, y1) and (x2, y2), calculate the distance between two points on the plane.
+
+Input
+
+The first line of the input data is an integer t, represents the number of test data sets, then t rows, each row consists of four real numbers,x1, y1, x2, y2,separated by spaces. Wherein 0≤x1, y1, x2, y2≤500。
+
+Output
+
+The results retain four decimal places. A separate line for each output, the occupancy of each result was 16, align right, and complement spare parts  with the "*".
+
+Sample Input
+
+2
+
+0 0 0 1
+
+0 1 1 0
+
+Sample Output
+
+**********1.0000
+
+**********1.4142

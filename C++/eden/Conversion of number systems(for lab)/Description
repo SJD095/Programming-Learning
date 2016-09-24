@@ -1,0 +1,25 @@
+Description
+
+conver a number s of x system(进制) converted into y system.
+
+Input
+
+Only one row, three integers x, y, s; 2 ≤ x,y ≤ 36.
+
+Wherein 10~35 is represented by A~Z.
+
+Output
+
+Only one line, the result of the number s converted into y system. Wherein 10~35 is represented by A~Z
+
+Sample Input
+
+2 10 111
+
+2 10 -111
+
+Sample Output
+
+7
+
+-7

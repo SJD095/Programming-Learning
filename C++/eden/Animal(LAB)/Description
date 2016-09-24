@@ -1,0 +1,79 @@
+The class Animal is defined as follows:
+
+ 
+
+class Animal {
+
+public:
+
+    Animal(string n): name(n) {}
+
+    virtual string shout(){return "";}
+
+public:
+
+    string name;
+
+};
+
+ 
+
+You are to derive two classes Dog and Donkey from Animal, with shout() returning "bark" and 
+
+"hee-haw" respectively. Class Dog and Donkey should have the following form:
+
+ 
+
+class Dog: public Animal
+
+{
+
+public:
+
+    Dog(string name, string color);
+
+ 
+
+    string shout();
+
+    string getColor()
+
+    {
+
+        return color;
+
+    }
+
+private:
+
+    string color;
+
+};
+
+ 
+
+class Donkey: public Animal
+
+{
+
+public:
+
+    Donkey(string name, int weight);
+
+ 
+
+    string shout();
+
+    int getWeight()
+
+    {
+
+        return weight;
+
+    }
+
+private:
+
+    int weight;
+
+};
