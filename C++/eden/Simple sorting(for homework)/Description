@@ -1,0 +1,29 @@
+Description
+
+Choose a familiar sort to deal with the input string, sort the letters in accordance with the order in alphabetical(ascending).
+
+Input
+
+The first line contains an integer n, represents the number of the tests, the next n rows, each is a string of all lower case letters of the alphabet.
+
+Output
+
+ Output a sorted string, and one string per line.
+
+Sample Input
+
+3
+
+abcdefg
+
+gfedcba
+
+acbacb
+
+Sample Output
+
+abcdefg
+
+abcdefg
+
+aabbcc

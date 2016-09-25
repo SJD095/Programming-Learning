@@ -1,0 +1,33 @@
+Description
+
+Enter two strings a, b, determine whether string a contains the string b, or string b contains the string a.
+
+Input
+
+The first line of input contains an integer n, represents the number of tests, then, next n lines, each contains a set of strings a and b, separated by a space.
+
+Output
+
+If a contains b or b contains a, please output  "YES", otherwise output "NO", a single line for each output.
+
+Sample Input
+
+4
+
+win in
+
+abababab ab
+
+long longlong
+
+young old
+
+Sample Output
+
+YES
+
+YES
+
+YES
+
+NO

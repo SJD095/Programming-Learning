@@ -1,0 +1,13 @@
+Now you have to implement a class named ExpandedVector, with only one method my_reverse.
+
+This method simply reverse the order of elements in the sequence of a vector.
+
+For example:
+
+v.push_back(1);    // 1
+
+v.push_back(2);    // 1 2
+
+v.my_reverse();    // 2 1
+
+For your convenience, the data type of the elements is set to be ints.

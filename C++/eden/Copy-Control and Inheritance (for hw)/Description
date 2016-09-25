@@ -1,0 +1,37 @@
+All of you have known about deep copy. In this problem, there are two classes Base and Derived. The Base Class has a value field and Derived Class which inherits from Base has a data(pointer) field and size field itself. Base Class has been given to you, please Implements the Derived Class in "derived.cpp". 
+
+To avoid pesentation error in your code,  the implementation of std::ostream& operator<<(std::ostream&, const Derived&)  has also been given to you in "main.cpp".
+
+ 
+
+===================
+Sample Test
+
+int* arr = new int[10];
+int b[4] = {4, 1, 4, 2};
+for (int i = 0; i < 10; i++)
+    arr[i] = i;
+Derived d1(arr, 10, 4);
+cout << d1 << endl;
+Derived d2(d1);
+cout << d2 << endl;
+
+Derived d3(b, 4, 5);
+cout << d3 << endl;
+
+d2 = d3;
+cout << d2 << endl;
+delete []arr;
+
+====================
+Sample Output
+
+
+Base Value: 4
+Derived Datas: 0 1 2 3 4 5 6 7 8 9
+Base Value: 4
+Derived Datas: 0 1 2 3 4 5 6 7 8 9
+Base Value: 5
+Derived Datas: 4 1 4 2
+Base Value: 5
+Derived Datas: 4 1 4 2
