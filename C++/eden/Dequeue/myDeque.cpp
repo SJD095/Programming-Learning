@@ -12,15 +12,16 @@ myDeque::myDeque(const myDeque & d)
 	_size = d._size;
 	if(d._head != NULL)
 	{
-		_head = new listNode(d._head -> x, d.head -> _prep, d._head -> _succ);
+		_head = new listNode(d._head -> _x, d._head -> _prep, d._head -> _succ);
 		auto tmp = _head;
-		auto focus = d._head -> next;
+		auto focus = d._head -> _succ;
 		while(focus != d._tail)
-		{
-			tmp -> next = new listNode(focus -> x, focus -> _prep, focus -> _succ);
-			focus = focus -> next;
-			tmp = tmp -> next;
+		{   cout << tmp -> _x << endl;
+			tmp -> _succ = new listNode(focus -> _x, focus -> _prep, focus -> _succ);
+			focus = focus -> _succ;
+			tmp = tmp -> _succ;
 		}
+		tmp -> _succ = new listNode(focus -> _x, focus -> _prep, focus -> _succ);
 	}
 	else
 	{
@@ -28,13 +29,13 @@ myDeque::myDeque(const myDeque & d)
 	}
 }
 
-myDeque::~myDeque();
+myDeque::~myDeque()
 {
 	auto tmp = _head;
-	while(tmp != _tail)
+	while(tmp != _tail && tmp != NULL)
 	{
 		auto n = tmp;
-		tmp = tmp -> next;
+		tmp = tmp -> _succ;
 		delete n;
 	}
 }
@@ -46,7 +47,7 @@ int myDeque::getSize() const
 
 bool myDeque::empty() const
 {
-	return _size = 0 ? true : false;
+	return _size == 0 ? true : false;
 }
 int myDeque::head() const
 {
@@ -63,6 +64,14 @@ void myDeque::push_front(const int & t)
 	auto tmp = new listNode(t, NULL, _head);
 	_head = tmp;
 	_size++;
+	if(_size == 1)
+	{
+		_tail = _head;
+	}
+	else
+	{
+		_head -> _succ -> _prep = _head;
+	}
 }
 
 void myDeque::push_back(const int & t)
@@ -70,6 +79,14 @@ void myDeque::push_back(const int & t)
 	auto tmp = new listNode(t, _tail, NULL);
 	_tail = tmp;
 	_size++;
+	if(_size == 1)
+	{
+		_head = _tail;
+	}
+	else
+	{
+		_tail -> _prep -> _succ = _tail;
+	}
 }
 bool myDeque::pop_front()
 {
@@ -82,7 +99,7 @@ bool myDeque::pop_front()
 		auto tmp = _head;
 		_head = _head -> _succ;
 		delete tmp;
-		size--;
+		_size--;
 		return true;
 	}
 }
@@ -97,7 +114,7 @@ bool myDeque::pop_back()
 		auto tmp = _tail;
 		_tail = _tail -> _prep;
 		delete tmp;
-		size--;
+		_size--;
 		return true;
 	}
 }
