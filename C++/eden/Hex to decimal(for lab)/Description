@@ -1,0 +1,26 @@
+Write a function that parses a hex number as a string into a decimal integer. 
+The function header is as follows:
+
+int parseHex(const char * const hexString)
+
+For example, hexString "A5" is 165 (10*16+5=165). So, parseHex("A5") returns 165.
+Your implementation of parseHex function should throw a runtime_error exception if the string is not a hex string.
+
+Note: 
+For the sake of simplicity, we only consider "xxxx...", "+xxxx..", "-xxxxx..." as a valid hex string (x represents 0~9、a~f or A~F); 
+Each decimal integers obtained from a valid hex string are ensured to be in a integer range; 
+Every character in the hexString before '\0' should be taken into consideration.
+
+[Sample Test]
+try {
+    cout << parseHex("10") << endl;
+    cout << parseHex("ABC") << endl;
+    cout << parseHex("9G3") << endl;
+} catch (runtime_error ex) {
+    cout << ex.what() << endl;
+}
+
+[Sample output]
+16
+2748
+Hex number format error

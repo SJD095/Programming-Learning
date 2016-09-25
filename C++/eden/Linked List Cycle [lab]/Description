@@ -1,0 +1,50 @@
+Given a linked list, determine if it has a cycle in it.
+
+Implement bool hasCycle(ListNode *head) in hasCycle.h
+
+If has cycle, return true, otherwise, return false
+
+The Definition for singly-linked list.
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x): val(x), next(NULL) {}
+ * };
+ */
+NOTE: 
+
+The condition of two ListNode are the same (同一个节点) is that
+
+They have same memory address (内存地址),
+
+Not their value (值相同但地址不同则不是同一节点）
+
+ 
+Sample Test
+/*
+ has cycle
+    _______
+   /       \
+  /         \
+ 1-->2-->3-->4
+
+*/
+ListNode *head = new ListNode(1);
+head->next = new ListNode(2);
+head->next->next = new ListNode(3);
+head->next->next->next = new ListNode(4);
+head->next->next->next->next = head;
+cout << hasCycle(head) << endl;
+
+Sample Output
+1
+
+Hint:
+
+Follow up:
+Can you solve it without using extra space?
+If you can't figure it out, read the solution below
+http://t.cn/RABCHf0

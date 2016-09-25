@@ -1,0 +1,15 @@
+You are to implement the function void check_negative(int), which takes as input an integer, and throw a logic_error exception with the message "Not a negative number" if the integer is non-negative, otherwise print "Negative number".
+
+Your submitted source code should include the implementation of the check_negative function .
+
+[Sample Test]
+try {
+    check_negative(-1);
+    check_negative(1);
+} catch (logic_error ex) {
+    cout << ex.what() << endl;
+}
+
+[Sample Output]
+Negative number
+Not a negative number

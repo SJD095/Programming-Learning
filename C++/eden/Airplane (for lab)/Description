@@ -1,0 +1,43 @@
+The XYZ Airline has three kinds of airplane: ModelA, ModelB, ModelC and these airplanes fly in their own way. ModelA and ModelB fly straightly to destination (default way to fly) while ModelC fly to destination in a semi-circle track. All these Models inherit from the Airplane Class. Airplane is declared as follow:
+
+class Airplane {
+ public:
+    virtual void fly(const std::string& dest) = 0;
+ protected:
+    void defaultFly(const std::string& dest);
+};
+
+Please implements Airplane, ModelA, ModelB, ModelC Class in "airplane.h";
+
+========================
+Sample Input
+Airplane* pa = new ModelA;
+Airplane* pb = new ModelB;
+Airplane* pc = new ModelC;
+
+pa->fly("PDX");
+pb->fly("PDY");
+pc->fly("PDZ");
+
+delete pa;
+delete pb;
+delete pc;
+
+========================
+Sample Output
+The airplane flies straightly to airport PDX.
+The airplane flies straightly to airport PDY.
+The airplane flies in a semi-circle track to airport PDZ.
+
+
+Hint:
+
+接口继承与实现继承
+
+Although the problem is so easy to solve, please think about: 
+
+It can also be solved with an impure virtual version virtual void fly(const string& dest) { ... }  in Airplane Class.
+
+Compare it with the void defaultFly(const string& dest)  { ... } version. 
+
+virtual void fly(const std::string& dest) = 0;这条语句表明，类Airplane是抽象类，这个类的方法不允许实现。

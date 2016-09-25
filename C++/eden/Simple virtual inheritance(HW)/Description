@@ -1,0 +1,7 @@
+There are two class in this problem, a virtual base class VirtualBase that we have given to you and a derived class Derived which you should implement.
+
+The VirtualBase interface is simply to set and get an integer value. The Derived adds a method for printing the value and a member for accessing the value. The printing value method named printValue() and output:  cout << "Derived::printValue(): value is " << theValue << std::endl;
+
+ 
+
+We then have two functions in the global namespace, printTheValue1() and printTheValue2(), which print out the values in different ways: the first simply uses the get method of the interface to retrieve the value; the second tries to calls the Derived class’ print method.

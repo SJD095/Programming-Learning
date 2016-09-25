@@ -1,0 +1,69 @@
+【Test Point】STL vector
+
+ In this problem， we want to sort the knowledge which we will review beform final exam.
+
+ You should enter the knowledge point, and then enter it's rating("quit" to exit)
+
+ When your personal library is established, we want to print out the knowledge point order by title or rating
+
+ 
+
+【Test input】
+
+quit
+
+【stdout output】
+
+No entries. Bye
+
+ 
+
+【Test input】
+
+hello world
+
+4
+
+dangerous
+
+5
+
+human
+
+2
+
+quit
+
+【stdout output】
+
+Thank you. You entered the following 3 ratings:
+
+Rating Book
+
+4 hello world
+
+5 dangerous
+
+2 human
+
+Sorted by title:
+
+Rating Book
+
+5 dangerous
+
+4 hello world
+
+2 human
+
+Sorted by rating:
+
+Rating Book
+
+2 human
+
+4 hello world
+
+5 dangerous
+
+Bye.
